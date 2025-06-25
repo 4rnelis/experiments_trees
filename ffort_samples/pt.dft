@@ -1,0 +1,12 @@
+toplevel "System";
+"System" or "T" "E2";
+"E2" or "E3" "K2";
+"E3" and "S" "E4";
+"E4" or "S1" "E5";
+"E5" or "K1" "R";
+"T" lambda=5.0e-6 dorm=0;
+"K2" lambda=3.0e-5 dorm=0;
+"S" lambda=1.0e-4 dorm=0;
+"S1" lambda=3.0e-5 dorm=0;
+"K1" lambda=5.0e-6 dorm=0;
+"R" lambda=1.0e-4 dorm=0;

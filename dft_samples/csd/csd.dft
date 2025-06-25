@@ -1,0 +1,11 @@
+toplevel "System";
+"System" or "CommonCauseSealFailure" "SealsFailIndependently";
+"CommonCauseSealFailure" and "ContaminationTapeFails" "CommonCauseSealFailureBE";
+"SealsFailIndependently" and "MetalToMetalSealFails" "CompressionSealFailure" "FusedPlugFails";
+"CompressionSealFailure" and "CompressionSeal1Fails" "CompressionSeal2Fails";
+"ContaminationTapeFails" lambda=1 prob=1.0e1;
+"CommonCauseSealFailureBE" lambda=1 prob=1.0e5;
+"MetalToMetalSealFails" lambda=1 prob=1.0e3;
+"FusedPlugFails" lambda=1 prob=1.0e3;
+"CompressionSeal1Fails" lambda=1 prob=1.0e3;
+"CompressionSeal2Fails" lambda=1 prob=1.0e3;
